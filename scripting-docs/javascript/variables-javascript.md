@@ -32,11 +32,11 @@ In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], a variable c
   
 ```JavaScript  
 // A single declaration.  
-var count;    
+let count;    
 // Multiple declarations with a single var keyword.  
-var count, amount, level;      
+let count, amount, level;      
 // Variable declaration and initialization in one statement.  
-var count = 0, amount = 100;   
+let count = 0, amount = 100;   
 ```  
   
  If you do not initialize your variable in the `var` statement, it automatically takes on the value `undefined`.  
@@ -70,16 +70,16 @@ Alpha&Beta
  When you want to declare a variable and initialize it, but do not want to give it any particular value, assign it the value `null`. Here is an example.  
   
 ```JavaScript  
-var bestAge = null;  
-var muchTooOld = 3 * bestAge; // muchTooOld has the value 0.  
+let bestAge = null;  
+let muchTooOld = 3 * bestAge; // muchTooOld has the value 0.  
 ```  
   
  If you declare a variable without assigning a value to it, it has the value `undefined`. Here is an example.  
   
 ```JavaScript  
-var currentCount;  
+let currentCount;  
 // finalCount has the value NaN because currentCount is undefined.  
-var finalCount = 1 * currentCount;   
+let finalCount = 1 * currentCount;   
 ```  
   
  The `null` value behaves like the number 0, while `undefined` behaves like the special value `NaN` (Not a Number). If you compare a `null` value and an `undefined` value, they are equal.  
@@ -95,7 +95,7 @@ noStringAtAll = "";
   
 ```JavaScript  
 // Error. Length and width do not yet exist.  
-var area = length * width;   
+let area = length * width;   
 ```  
   
 ## Coercion  
@@ -112,8 +112,8 @@ var area = length * width;
  In the following example, a number added to a string results in a string.  
   
 ```JavaScript  
-var x = 2000;  
-var y = "Hello";  
+let x = 2000;  
+let y = "Hello";  
 // The number is coerced to a string.  
 x = x + y;  
 document.write(x);   
